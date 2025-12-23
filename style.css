@@ -1,0 +1,446 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #6366f1;
+            min-height: 100vh;
+            padding: 80px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 900px;
+            width: 100%;
+            padding: 40px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            color: #6366f1;
+            margin-bottom: 10px;
+            font-size: 2rem;
+            text-align: center;
+        }
+
+        .subtitle {
+            color: #000;
+            margin-bottom: 30px;
+            font-size: 0.95rem;
+            text-align: center;
+        }
+
+        .input-section {
+            background: #D3D3D3;
+            padding: 25px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+
+        .input-group {
+            margin-bottom: 15px;
+            display: flex;
+            gap: 10px;
+        }
+
+        .input-group input {
+            flex: 1;
+            padding: 12px;
+            border: 2px solid #e0e0e0;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+
+        .input-group input:focus {
+            outline: none;
+            border-color: #000;
+        }
+
+        .button-group {
+            display: block;
+        }
+
+        button {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 4px;
+            font-size: 1rem;
+            cursor: pointer;
+            font-weight: 600;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+
+        .btn-primary {
+            background: #6366f1;
+            color: white;
+        }
+
+        .btn-secondary {
+            background: #e0e7ff;
+            color: #6366f1;
+        }
+
+        .btn-danger {
+            background: #ef4444;
+            color: white;
+        }
+
+        .btn-success {
+            background: #10b981;
+            color: white;
+        }
+
+        .btn-warning {
+            background: #f59e0b;
+            color: white;
+        }
+
+        .employees-list {
+            margin-bottom: 30px;
+        }
+
+        .employee-card {
+            background: #f9fafb;
+            padding: 15px;
+            border-radius: 4px;
+            margin-bottom: 10px;
+            border-left: 4px solid #6366f1;
+            overflow: hidden;
+        }
+
+        .employee-info {
+            display: inline-block;
+            width: 75%;
+            vertical-align: middle;
+        }
+
+        .employee-name {
+            font-weight: 600;
+            color: #1f2937;
+            margin-bottom: 5px;
+        }
+
+        .employee-salary {
+            color: #6b7280;
+            font-size: 0.9rem;
+        }
+
+        .remove-btn {
+            background: #fee2e2;
+            color: #ef4444;
+            padding: 8px 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.85rem;
+            float: right;
+        }
+
+        .results-section {
+            background: #f0fdf4;
+            padding: 25px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .results-title {
+            color: #059669;
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .result-item {
+            background: white;
+            padding: 15px;
+            border-radius: 4px;
+            margin-bottom: 10px;
+            border-left: 4px solid #10b981;
+        }
+
+        .result-text {
+            color: #1f2937;
+            line-height: 1.6;
+        }
+
+        .method-badge {
+            display: inline-block;
+            background: #6366f1;
+            color: white;
+            padding: 3px 8px;
+            border-radius: 3px;
+            font-size: 0.75rem;
+            margin-left: 8px;
+        }
+
+        .total-bonus {
+            background: #6366f1;
+            color: white;
+            padding: 20px;
+            border-radius: 4px;
+            text-align: center;
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-top: 15px;
+        }
+
+        .empty-state {
+            text-align: center;
+            color: #9ca3af;
+            padding: 40px;
+            font-size: 1.1rem;
+        }
+
+        .head-info {
+            background: #fef3c7;
+            padding: 15px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+            color: #000;
+            font-size: 0.9rem;
+        }
+
+        .method-info {
+            background: #dbeafe;
+            padding: 15px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+            color: #1e40af;
+            font-size: 0.9rem;
+        }
+
+        .full-width-btn {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        .calc-buttons {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        /* Responsive Media Queries */
+        @media (max-width: 1024px) {
+            body {
+                padding: 60px 40px;
+            }
+
+            .container {
+                padding: 30px;
+            }
+
+            h1 {
+                font-size: 1.75rem;
+            }
+        }
+
+        @media (max-width: 1023px) and (min-width: 769px) {
+            .input-group {
+                flex-wrap: wrap;
+            }
+
+            .input-group input {
+                flex: 1 1 calc(50% - 5px);
+                min-width: 200px;
+            }
+
+            .input-group input:last-child {
+                flex: 1 1 100%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 40px 20px;
+            }
+
+            .container {
+                padding: 25px;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            .subtitle {
+                font-size: 0.85rem;
+            }
+
+            .input-section {
+                padding: 20px;
+            }
+
+            .input-group {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            .input-group input {
+                width: 100%;
+                flex: none;
+            }
+
+            button {
+                width: 100%;
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+
+            .employee-info {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+
+            .remove-btn {
+                float: none;
+                width: 100%;
+                margin-top: 10px;
+            }
+
+            .results-section {
+                padding: 20px;
+            }
+
+            .results-title {
+                font-size: 1.1rem;
+            }
+
+            .total-bonus {
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 20px 10px;
+            }
+
+            .container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 1.25rem;
+            }
+
+            .subtitle {
+                font-size: 0.8rem;
+                margin-bottom: 20px;
+            }
+
+            .input-section {
+                padding: 15px;
+            }
+
+            .input-group input {
+                padding: 10px;
+                font-size: 0.9rem;
+            }
+
+            button {
+                padding: 10px 20px;
+                font-size: 0.9rem;
+            }
+
+            .employee-card {
+                padding: 12px;
+            }
+
+            .employee-name {
+                font-size: 0.95rem;
+            }
+
+            .employee-salary {
+                font-size: 0.85rem;
+            }
+
+            .results-section {
+                padding: 15px;
+            }
+
+            .results-title {
+                font-size: 1rem;
+            }
+
+            .result-item {
+                padding: 12px;
+            }
+
+            .result-text {
+                font-size: 0.9rem;
+            }
+
+            .total-bonus {
+                font-size: 0.95rem;
+                padding: 15px;
+            }
+
+            .head-info,
+            .method-info {
+                padding: 12px;
+                font-size: 0.85rem;
+            }
+
+            .method-badge {
+                font-size: 0.7rem;
+                padding: 2px 6px;
+            }
+
+            .empty-state {
+                padding: 30px;
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 360px) {
+            body {
+                padding: 15px 8px;
+            }
+
+            .container {
+                padding: 15px;
+            }
+
+            h1 {
+                font-size: 1.1rem;
+            }
+
+            .subtitle {
+                font-size: 0.75rem;
+            }
+
+            .input-section {
+                padding: 12px;
+            }
+
+            .input-group input {
+                padding: 8px;
+                font-size: 0.85rem;
+            }
+
+            button {
+                padding: 8px 16px;
+                font-size: 0.85rem;
+            }
+
+            .employee-card {
+                padding: 10px;
+            }
+
+            .results-section {
+                padding: 12px;
+            }
+
+            .total-bonus {
+                font-size: 0.9rem;
+                padding: 12px;
+            }
+        }

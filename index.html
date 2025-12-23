@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Bonus Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Employee Bonus Calculator</h1>
+        <p class="subtitle">Calculate Bonus for High-Earning Employees</p>
+
+        <div class="input-section">
+            <div class="input-group">
+                <input type="text" id="empName" placeholder="Employee Name" value="Alice">
+                <input type="number" id="empSalary" placeholder="Salary (₹)" value="50000">
+                <input type="number" id="bonusValue" placeholder="Bonus Value (₹)" value="5000">
+            </div>
+            <div class="button-group">
+                <button class="btn-primary" onclick="addEmployee()">Add Employee</button>
+                <button class="btn-secondary" onclick="loadSampleData()">Load Sample Data</button>
+                <button class="btn-danger" onclick="clearAll()">Clear All</button>
+            </div>
+        </div>
+
+        <div class="head-info">
+            Only employees earning more than ₹45,000 will receive bonus
+        </div>
+
+        <div class="employees-list" id="employeesList"></div>
+
+        <button class="btn-primary full-width-btn" onclick="calculateBonuses()">
+            Calculate Bonus
+        </button>
+
+        <div id="results"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
