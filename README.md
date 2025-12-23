@@ -1,4 +1,5 @@
-# 🛠 Task: Employee Bonus Calculator (Web-based Interactive Task)
+# 🛠 Task: Employee Bonus Calculator 
+> (Web-based Interactive Task)
 
 This task will cover the following concepts:
 - Call, Apply, Bind: Dynamically setting this context to calculate bonuses using call, optionally using apply and bind
